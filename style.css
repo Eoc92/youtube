@@ -251,6 +251,57 @@ header .icons .fa-search{
     margin: 0 var(--padding);
 }
 
+.comment .comments {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+}
+
+.comment .comments .item {
+    display: flex;
+    margin-bottom: var(--padding);
+}
+
+.comment .comments .item img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+}
+
+.comment .comments .item .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--padding);
+}
+
+.comment .comments .item .info .nameAndPeriod {
+    margin-bottom: 6px;
+}
+
+.comment .comments .item .info .nameAndPeriod .name{
+    font-size:var(--font-medium);
+}
+
+.comment .comments .item .info .nameAndPeriod .period {
+    font-size:var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.comments .comment {
+    margin-bottom: 8px;
+}
+
+.comments .emoticon .good,
+.comments .emoticon .bad {
+    font-size: var(--font-large);
+    margin-right: var(--padding);
+    color:var(--grey-dark-color);
+}
+
+.comments .emoticon .good .goodCount {
+    font-size: var(--font-medium);
+}
+    
 
 /* UpNext */
 .upNext {
@@ -305,7 +356,7 @@ header .icons .fa-search{
 }
 
 @media screen and (min-width: 768px) {
-    .infoAndUpNext{
+    .infoAndCommentAndUpNext{
         flex-direction: row;
         margin: var(--padding) 0;
     }
