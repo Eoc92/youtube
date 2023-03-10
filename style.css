@@ -74,7 +74,7 @@ header .icons .fa-search{
     max-width: 1000px;
 }
 
-body > .info{
+.infoAndComment > .info{
     padding: var(--padding);
 }
 
@@ -181,6 +181,78 @@ body > .info{
     font-size: var(--font-medium);
 }
 
+/* comment */
+.infoAndComment > .comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment .totalCommentAndSort {
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.comment .totalCommentAndSort .sort {
+    display: flex;
+    align-items: center;
+    margin-left: var(--padding);
+}
+
+.comment .totalCommentAndSort .sort i {
+    color: var(--grey-dark-color)
+}
+
+.comment .newComment {
+    display: flex;
+    margin-bottom: var(--padding);
+}
+
+.comment .newComment img {
+    width: var(--avatar-size);
+    height:var(--avatar-size);
+    border-radius: 50%;
+    margin-left: var(--padding);
+}
+
+.comment .newComment .commentInputAndBtn {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment .newComment .commentInputAndBtn .emoticonAndBtn {
+    display: flex;
+}
+
+.comment .newComment .commentInputAndBtn {
+    width: 100%;
+    margin-left: var(--padding);
+}
+
+.comment .newComment .commentInputAndBtn input{
+    width: 100%;
+}
+
+.comment .newComment .commentInputAndBtn .emoticonAndBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--padding);
+}
+
+.comment .newComment .commentInputAndBtn .emoticonAndBtn .emoticon {
+    font-size: large;
+}
+
+.comment .cancelAndAdd button{
+    font-size: medium;
+}
+
+.comment .cancelAndAdd .add {
+    margin: 0 var(--padding);
+}
+
+
+/* UpNext */
 .upNext {
     padding: 0 var(--padding);
 }
@@ -227,7 +299,7 @@ body > .info{
     font-size: var(--font-micro);
 }
 
-.infoAndUpNext {
+.infoAndCommentAndUpNext {
     display: flex;
     flex-direction: column;
 }
