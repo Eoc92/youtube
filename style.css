@@ -57,10 +57,42 @@ header .logo i {
     color: var(--red-color);
 }
 
+header .myPage {
+    width:calc(var(--avatar-size)/ 1.5);
+    height: calc(var(--avatar-size)/ 1.5);
+    border-radius: 50%;
+}
+
 header .icons .fa-search{
     margin-right: var(--padding);
 }
 
+header .search {
+    position: relative;
+    width: 200px;
+}
+
+header .search input {
+    width: 100%;
+    border: 1px solid var(--grey-light-color);
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 14px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+header .search button {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    color:var(--white-color);
+}
+
+
+
+
+/* player */
 .player {
     position: sticky;
     top: 0;
